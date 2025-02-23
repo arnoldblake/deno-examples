@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: dinosaurs } = await useFetch("/api/dinosaurs");
+  const { data: dinosaurs } = await useFetch("/api/dinosaurs");
 </script>
 
 <template>

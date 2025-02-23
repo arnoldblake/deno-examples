@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const route = useRoute();
-const { data: dinosaur } = await useFetch(
-  `/api/dinosaurs/${route.params.name}`
-);
+  const route = useRoute();
+  const { data: dinosaur } = await useFetch(
+    `/api/dinosaurs/${route.params.name}`
+  );
 </script>
 
 <template>

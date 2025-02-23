@@ -4,13 +4,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   nitro: {
-    preset: "deno",
+    preset: "deno"
+  },
+  vite: {
+    assetsInclude: ["**/*.json"]
   },
 
   app: {
     head: {
-      title: "Dinosaur Encyclopedia",
-    },
+      title: "Dinosaur Encyclopedia"
+    }
   },
 
   css: ["~/assets/css/main.css"],
@@ -18,9 +21,13 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
+      autoprefixer: {}
+    }
   },
 
   compatibilityDate: "2024-11-06",
+  modules: [
+    "@nuxt/test-utils/module"
+    //   "@nuxt/eslint"
+  ]
 });
