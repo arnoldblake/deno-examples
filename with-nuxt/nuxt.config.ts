@@ -26,8 +26,5 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-11-06",
-  modules: [
-    "@nuxt/test-utils/module"
-    //   "@nuxt/eslint"
-  ]
+  modules: ["@nuxt/test-utils/module", "nuxt-auth-utils"]
 });

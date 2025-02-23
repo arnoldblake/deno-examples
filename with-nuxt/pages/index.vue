@@ -1,4 +1,7 @@
 <script setup lang="ts">
+  definePageMeta({
+    middleware: ["authenticated"]
+  });
   const { data: dinosaurs } = await useFetch("/api/dinosaurs");
 </script>
 
